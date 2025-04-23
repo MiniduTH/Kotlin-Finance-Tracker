@@ -113,10 +113,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.action_settings -> {
-                // Navigate to settings fragment
-                loadFragment(SettingsFragment())
-            }
+
             R.id.action_backup -> {
                 createBackup()
             }
