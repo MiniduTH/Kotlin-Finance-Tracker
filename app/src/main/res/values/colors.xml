@@ -3,21 +3,21 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <color name="colorPrimary">#4CAF50</color>
-    <color name="colorPrimaryDark">#388E3C</color>
-    <color name="colorAccent">#8BC34A</color>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#FFC107</color>
     
-    <color name="primary">#4CAF50</color>
-    <color name="primary_dark">#388E3C</color>
-    <color name="primary_light">#C8E6C9</color>
-    <color name="accent">#8BC34A</color>
+    <color name="primary">#1976D2</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#FFC107</color>
     
-    <color name="income_green">#43A047</color>
-    <color name="expense_red">#E53935</color>
+    <color name="income_green">#66BB6A</color>
+    <color name="expense_red">#EF5350</color>
     
-    <color name="budget_good">#43A047</color>
-    <color name="budget_warning">#FFA000</color>
-    <color name="budget_exceeded">#E53935</color>
+    <color name="budget_good">#66BB6A</color>
+    <color name="budget_warning">#FFB74D</color>
+    <color name="budget_exceeded">#EF5350</color>
     
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#757575</color>

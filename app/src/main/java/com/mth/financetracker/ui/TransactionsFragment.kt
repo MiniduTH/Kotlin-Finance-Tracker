@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -13,12 +14,13 @@ import com.mth.financetracker.adapters.TransactionAdapter
 import com.mth.financetracker.data.PreferencesManager
 import com.mth.financetracker.model.Transaction
 
-class TransactionsFragment : Fragment() {
+class TransactionsFragment : Fragment(){
 
     private lateinit var preferencesManager: PreferencesManager
     private lateinit var recyclerView: RecyclerView
     private lateinit var fabAddTransaction: FloatingActionButton
     private lateinit var transactionAdapter: TransactionAdapter
+    private lateinit var tvNoTransactions: TextView
     
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,9 +34,10 @@ class TransactionsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         
         preferencesManager = PreferencesManager(requireContext())
-        
+ 
         recyclerView = view.findViewById(R.id.recycler_transactions)
         fabAddTransaction = view.findViewById(R.id.fab_add_transaction)
+        tvNoTransactions = view.findViewById(R.id.tv_no_transactions)
         
         setupRecyclerView()
         
@@ -77,8 +80,16 @@ class TransactionsFragment : Fragment() {
     }
     
     fun updateTransactions() {
-        transactionAdapter.updateTransactions(
-            preferencesManager.getTransactions().sortedByDescending { it.date }
-        )
+        val transactions = preferencesManager.getTransactions().sortedByDescending { it.date }
+        transactionAdapter.updateTransactions(transactions)
+        
+        // Show/hide the "No transactions" text view based on whether transactions exist
+        if (transactions.isEmpty()) {
+            tvNoTransactions.visibility = View.VISIBLE
+            recyclerView.visibility = View.GONE
+        } else {
+            tvNoTransactions.visibility = View.GONE
+            recyclerView.visibility = View.VISIBLE
+        }
     }
 }

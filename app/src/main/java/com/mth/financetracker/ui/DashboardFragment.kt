@@ -97,7 +97,7 @@ class DashboardFragment : Fragment() {
             }
         } else {
             tvBudgetStatus.text = getString(R.string.no_budget_set)
-            tvBudgetStatus.setTextColor(resources.getColor(R.color.text_secondary, null))
+            tvBudgetStatus.setTextColor(resources.getColor(R.color.black, null))
         }
     }
 }
