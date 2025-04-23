@@ -61,7 +61,9 @@
     <!-- Backup & Restore -->
     <string name="backup_success">Backup successfully created</string>
     <string name="restore_success">Data successfully restored</string>
-    
+    <string name="navigation_drawer_open">nav bar open</string>
+    <string name="navigation_drawer_close">nav bar close</string>
+
     <!-- Categories -->
     <string-array name="income_categories">
         <item>Salary</item>
