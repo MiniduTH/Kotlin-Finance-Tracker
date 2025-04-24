@@ -19,7 +19,8 @@
     <RadioGroup
         android:id="@+id/radio_group_transaction_type"
         android:layout_width="363dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:clipToPadding="false"
         android:orientation="horizontal"
