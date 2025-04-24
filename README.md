@@ -12,8 +12,8 @@ Finance Tracker is a comprehensive Android application designed to help users ma
 
 ## Screenshots
 
-<img src="https://i.ibb.co/HL5Xr7f2/dashboard.png" alt="Dashboard" width="100"/> <img src="https://i.ibb.co/5hp4wjYf/add-transaction.png" alt="Add Transaction" width="100"/> <img src="https://i.ibb.co/Cpj1ZBfL/transactions.png" alt="Transactions" width="100"/>
-<img src="https://i.ibb.co/21bHdsFK/budget.png" alt="Budget" width="100"/> <img src="https://i.ibb.co/ksfqQndz/stat.png" alt="Statistics" width="100"/> <img src="https://i.ibb.co/vbzjQ01/backup-and-restore.png" alt="Backup and Restore" width="100"/>
+<img src="https://i.ibb.co/HL5Xr7f2/dashboard.png" alt="Dashboard" width="30%"/> <img src="https://i.ibb.co/5hp4wjYf/add-transaction.png" alt="Add Transaction" width="30%"/> <img src="https://i.ibb.co/Cpj1ZBfL/transactions.png" alt="Transactions" width="30%"/>
+<img src="https://i.ibb.co/21bHdsFK/budget.png" alt="Budget" width="30%"/> <img src="https://i.ibb.co/ksfqQndz/stat.png" alt="Statistics" width="30%"/> <img src="https://i.ibb.co/vbzjQ01/backup-and-restore.png" alt="Backup and Restore" width="30%"/>
 
 ## Getting Started
 
