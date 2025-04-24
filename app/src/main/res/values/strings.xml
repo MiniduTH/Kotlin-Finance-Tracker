@@ -85,4 +85,8 @@
         <item>Bills</item>
         <item>Other</item>
     </string-array>
+
+    <!-- Upcoming Expenses -->
+    <string name="upcoming_expenses">Upcoming Expenses</string>
+    <string name="no_upcoming_expenses">No upcoming expenses for the next 30 days</string>
 </resources>
