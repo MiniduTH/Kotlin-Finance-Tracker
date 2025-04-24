@@ -16,10 +16,15 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import androidx.work.ExistingPeriodicWorkPolicy
+import androidx.work.PeriodicWorkRequestBuilder
+import androidx.work.WorkManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.mth.financetracker.ui.*
 import com.mth.financetracker.util.BackupManager
+import com.mth.financetracker.util.ExpenseNotificationWorker
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -32,7 +37,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private val createBackupLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
-        if (result.resultCode == Activity.RESULT_OK) {
+        if (result.resultCode == RESULT_OK) {
             result.data?.data?.let { uri ->
                 if (backupManager.createBackup(uri)) {
                     Toast.makeText(this, R.string.backup_success, Toast.LENGTH_SHORT).show()
@@ -45,7 +50,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private val selectBackupLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
-        if (result.resultCode == Activity.RESULT_OK) {
+        if (result.resultCode == RESULT_OK) {
             result.data?.data?.let { uri ->
                 if (backupManager.restoreFromBackup(uri)) {
                     Toast.makeText(this, R.string.restore_success, Toast.LENGTH_SHORT).show()
@@ -103,6 +108,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         // Default fragment
         loadFragment(DashboardFragment())
+        
+        // Schedule daily notification check
+        scheduleNotificationWorker()
+    }
+    
+    private fun scheduleNotificationWorker() {
+        val notificationWorkRequest = PeriodicWorkRequestBuilder<ExpenseNotificationWorker>(
+            1, TimeUnit.DAYS
+        ).build()
+        
+        WorkManager.getInstance(this).enqueueUniquePeriodicWork(
+            ExpenseNotificationWorker.WORK_NAME,
+            ExistingPeriodicWorkPolicy.KEEP,
+            notificationWorkRequest
+        )
     }
 
     private fun loadFragment(fragment: Fragment) {

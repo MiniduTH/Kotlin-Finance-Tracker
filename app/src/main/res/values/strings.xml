@@ -58,6 +58,12 @@
     <string name="budget_exceeded_title">Budget Exceeded</string>
     <string name="budget_exceeded_text">You\'ve exceeded your budget by %s</string>
     
+    <!-- Notification Strings -->
+    <string name="notification_channel_name">Upcoming Expenses</string>
+    <string name="notification_channel_description">Notifications for upcoming expenses</string>
+    <string name="upcoming_expense_notification_title">Upcoming Expense Tomorrow</string>
+    <string name="upcoming_expense_notification_text">%1$s: %2$s due tomorrow</string>
+    
     <!-- Backup & Restore -->
     <string name="backup_success">Backup successfully created</string>
     <string name="restore_success">Data successfully restored</string>

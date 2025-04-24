@@ -47,13 +47,14 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
     implementation("androidx.fragment:fragment-ktx:1.6.1")
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("androidx.recyclerview:recyclerview:1.3.1")
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
-    
+    implementation("androidx.work:work-runtime-ktx:2.9.0") 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
