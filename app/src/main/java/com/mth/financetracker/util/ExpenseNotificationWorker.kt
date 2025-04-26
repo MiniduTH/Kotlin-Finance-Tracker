@@ -39,9 +39,7 @@ class ExpenseNotificationWorker(
 
         // Find expenses scheduled for tomorrow
         val tomorrowExpenses = transactions.filter {
-            it.type == com.mth.financetracker.model.Transaction.TransactionType.EXPENSE &&
-            it.date != null &&
-            isDateBetween(it.date, tomorrowStart, tomorrowEnd)
+            it.type == com.mth.financetracker.model.Transaction.TransactionType.EXPENSE && isDateBetween(it.date, tomorrowStart, tomorrowEnd)
         }
 
         // Send notification for each upcoming expense

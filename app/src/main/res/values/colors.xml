@@ -12,9 +12,17 @@
     <color name="primary_light">#BBDEFB</color>
     <color name="accent">#FFC107</color>
     
-    <color name="income_green">#66BB6A</color>
-    <color name="expense_red">#EF5350</color>
-    
+    <color name="income_green">#2ecc71</color>
+    <color name="expense_red">#e74c3c</color>
+    <color name="chart_blue">#3498db</color>
+    <color name="chart_purple">#9b59b6</color>
+    <color name="chart_orange">#f39c12</color>
+    <color name="chart_teal">#1abc9c</color>
+    <color name="chart_navy">#34495e</color>
+    <color name="chart_amber">#e67e22</color>
+    <color name="chart_gray">#95a5a6</color>
+    <color name="chart_brown">#d35400</color>
+
     <color name="budget_good">#66BB6A</color>
     <color name="budget_warning">#FFB74D</color>
     <color name="budget_exceeded">#EF5350</color>

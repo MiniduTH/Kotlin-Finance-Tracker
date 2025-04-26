@@ -55,6 +55,10 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
     implementation("androidx.work:work-runtime-ktx:2.9.0") 
+    
+    // Charts and Graphs
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

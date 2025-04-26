@@ -49,6 +49,36 @@
     
     <!-- Statistics -->
     <string name="spending_by_category">Spending by Category</string>
+    <string name="income_vs_expense">Income vs Expense</string>
+    <string name="monthly_trend">Monthly Trend</string>
+    <string name="expense_trend">Expense Trend</string>
+    <string name="income_trend">Income Trend</string>
+    <string name="yearly_comparison">Yearly Comparison</string>
+    <string name="pie_chart">Pie Chart</string>
+    <string name="bar_chart">Bar Chart</string>
+    <string name="line_chart">Line Chart</string>
+    <string name="last_30_days">Last 30 Days</string>
+    <string name="last_6_months">Last 6 Months</string>
+    <string name="last_12_months">Last 12 Months</string>
+    <string name="chart_no_data">No data available for the selected period</string>
+    <string name="chart_type_explainer">Choose a chart type to visualize your financial data</string>
+    <string name="time_period_explainer">Select a time period to analyze</string>
+    <string name="chart_info_description">Chart information</string>
+    <string name="income_expense_info_description">Income vs Expense information</string>
+    <string name="category_info_description">Category information</string>
+    <string name="no_expense_categories">No expense categories found for the selected period</string>
+    <string name="pie_chart_explanation">The pie chart shows your spending breakdown by category</string>
+    <string name="bar_chart_explanation">The bar chart shows your income and expenses over time</string>
+    <string name="line_chart_explanation">The line chart shows your expense trend over time</string>
+    <string name="income_expense_explanation">Compare your total income against expenses</string>
+    <string name="swipe_to_explore">Swipe on chart to explore more details</string>
+    <string name="pinch_to_zoom">Pinch to zoom in and out of the chart</string>
+    <string name="top_expense_category">Your top expense category is %1$s (%2$s)</string>
+    <string name="total_income_summary">Total Income: %s</string>
+    <string name="total_expense_summary">Total Expenses: %s</string>
+    <string name="savings_summary">Savings: %s (%s of income)</string>
+    <string name="overspending_summary">Overspending: %s (%s of income)</string>
+    <string name="tap_for_details">Tap on chart elements for details</string>
     
     <!-- Notifications -->
     <string name="budget_alert_channel_name">Budget Alerts</string>
