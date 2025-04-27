@@ -864,7 +864,7 @@ class StatisticsFragment : Fragment(), OnChartValueSelectedListener {
         e ?: return
         
         when {
-            pieChart.visibility == View.VISIBLE -> {
+            pieChart.isVisible -> {
                 if (e is PieEntry) {
                     val categoryName = e.label
                     val percentage = e.value
